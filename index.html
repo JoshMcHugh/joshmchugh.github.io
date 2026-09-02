@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Josh McHugh</title>
+<meta name="description" content="Josh McHugh — technology journalist and strategist. CEO, Attention Span Media. Editor in Chief, Attention FWD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EDEBE3;
+    --ink: #1C1B19;
+    --muted: #6B6558;
+    --rule: #C9C4B8;
+    --accent: #2B4C5C;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .name {
+    font-family: 'IBM Plex Serif', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(2.4rem, 7vw, 3.4rem);
+    line-height: 1.1;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  .role {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 2.5rem;
+    max-width: 30em;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem 0;
+  }
+
+  .bio p {
+    margin: 0 0 1.1rem;
+    max-width: 34em;
+  }
+
+  .bio .placeholder {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  nav.links {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  nav.links a {
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    width: fit-content;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  nav.links a:hover,
+  nav.links a:focus-visible {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  nav.links .label {
+    color: var(--muted);
+    font-size: 0.9rem;
+    min-width: 6.5em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 480px) {
+    main { padding: 4rem 1.25rem 3rem; }
+    nav.links a { flex-direction: column; gap: 0.1rem; }
+    nav.links .label { min-width: unset; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1 class="name">Josh McHugh</h1>
+  <p class="role">Technology journalist and strategist. CEO, Attention Span Media. Editor in Chief, Attention FWD.</p>
+
+  <hr>
+
+  <div class="bio">
+    <!--
+      Josh: replace the paragraph below with your own 2–3 sentences.
+      Nothing here is meant to be published as-is.
+    -->
+    <p class="placeholder">[Your bio goes here — a couple of sentences on the arc from Forbes/Wired to Attention Span to where you're headed next.]</p>
+  </div>
+
+  <nav class="links" aria-label="Elsewhere">
+    <a href="https://www.linkedin.com/in/joshmchugh" target="_blank" rel="noopener">
+      <span class="label">LinkedIn</span> in/joshmchugh
+    </a>
+    <a href="https://attentionspan.com" target="_blank" rel="noopener">
+      <span class="label">Company</span> attentionspan.com
+    </a>
+    <a href="mailto:josh@attentionspan.com">
+      <span class="label">Email</span> josh@attentionspan.com
+    </a>
+    <!-- Fill in your real Substack URLs before publishing -->
+    <a href="#" target="_blank" rel="noopener">
+      <span class="label">What's Fair</span> Substack — AI ethics &amp; fairness
+    </a>
+    <a href="#" target="_blank" rel="noopener">
+      <span class="label">ELO</span> Field dispatches, SF AI &amp; literary scenes
+    </a>
+  </nav>
+
+  <footer>
+    San Francisco, California
+  </footer>
+
+</main>
+</body>
+</html>
